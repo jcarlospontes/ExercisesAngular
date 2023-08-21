@@ -1,0 +1,18 @@
+Arquivos:
+
+tsconfig.json: arquivo de configuração para compilação do typescript
+angular.json: arquivo de configuração do angular
+main.ts: arquivo que importa e carrega o AppModule(módulo principal da aplicação) que vai inicializar a aplicação
+
+src/app
+    app-routing.module.ts: arquivo de rotas
+    app.component.ts: template esta contido dentro do component por criação --minimal
+    app.module.ts: contem o bootstrap que sinaliza que utilizará o AppComponent
+
+src/assets: carregar imagens da aplicação
+
+src/environments
+    environments.prod.ts: variaveis de ambiente de prod
+    environments.ts: variaveis de ambiente da dev
+
+    index.html: por se tratar de uma SPA contem o componente principal da aplicação
