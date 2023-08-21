@@ -16,3 +16,55 @@ src/environments
     environments.ts: variaveis de ambiente da dev
 
     index.html: por se tratar de uma SPA contem o componente principal da aplicação
+
+
+
+Estrutura:
+
+Componente{
+    HTML
+    CSS
+    TS
+}
+
+Diretiva{
+    Possui decorator(Evita herança e repetições) @Diretive
+    Pode tanto alterar o estilo como o comportamento
+}
+
+EventBinding: utiliza no HTML () para ligar um metodo do TS a um evento.
+PropertyBiding: utiliza no HTML [] para ligar um atributo dentro do TS do componente.
+OneWayDataBinding: ao utilizar [value]="nome" podemos fazer uma ligação a um atributo do TS nome:"x"
+TwoWayDataBinding: ao utilizar [(ngModel)]="nome" podemos fazer uma ligação dupla com oa tributo do TS nome: x;
+
+
+
+Rotas:
+
+Faz o mapeamento de uma URL a um componente
+
+/home -> Componente Home
+/produto -> Componente Produto
+/usuario -> Componente Usuário
+
+
+Pipes: quando fazemos um pipe em uma variavel chaveada {{}} podemos fazer um filtro/formatação
+
+Observer: possui o padrão orientado a evento/reativa
+Subject: monitora e detecta eventos, ao detectar o evento notifica todos os observadores
+Observer: interessados em monitorar eventos(todos precisam registrar no Subject que estão interessados em observar um evento).
+
+JS -> callbacks: função com parametro para outra função
+    promisses: tem a capacidade de encadear cada chamada de promisse sem ter o alinhamento do callback
+        observable: possui reusabilidade de dados, consegue lidar com stream de dados e possui operadores que são funções que ajudam a processar os dados
+
+Service:
+    @Injectable -> decorator que indica que a classe é detectável pelo angular e é possível ser injetada em outras classes
+        providedIn -> DesignPatternSingleton | quando referenciamos "root" temos apenas uma instancia para o service
+    Injeção de dependencia -> a classe recebe as dependencias de uma fonte externa
+    Todos os Services são singletons então só há uma instancia deles na aplicação toda.
+
+Injetores:
+    Injetor de módulo: o root aponta para o AppModule @NgModule @Injectable
+    Injetor de elemento: define serviços que quer colocar dentro do componente @Directive @Component
+
