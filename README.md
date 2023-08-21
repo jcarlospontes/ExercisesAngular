@@ -9,3 +9,4 @@ Comandos frontend:
 1. npm i -g @angular/cli (instalação angular)
 2. ng new frontend --minimal (criação de projeto com o mínimo necessário)
 3. ng serve (execução de servidor de testes)
+4. ng g c <diretorio/nomecomponente>(criação de componente)
